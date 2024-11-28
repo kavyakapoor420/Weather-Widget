@@ -15,7 +15,7 @@ const SearchBox=({updateInfo})=>{
     let [city,setCity]=useState("")
     let [error,setError]=useState(false)
 
-    const API_KEY="71e06f12bdadaa19d9f19199a0df99e3" ;
+    const API_KEY=import.meta.env.VITE_API_KEY; // store api_key in .env file 
     const API_URL=`https://api.openweathermap.org/data/2.5/weather`
      
 
